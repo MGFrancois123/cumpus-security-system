@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Management System</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">C</div>
+            <h2>Campus<span>Hub</span></h2>
+        </div>
+
+        <nav class="navigation">
+            <a href="#" class="nav-link active">Dashboard</a>
+            <a href="#students" class="nav-link">Students</a>
+            <a href="#courses" class="nav-link">Courses</a>
+            <a href="#lecturers" class="nav-link">Lecturers</a>
+            <a href="#settings" class="nav-link">Settings</a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <p>Campus Management</p>
+            <small>Version 1.0.0</small>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="topbar">
+            <div>
+                <h1>Dashboard</h1>
+                <p>Welcome to Campus Management System</p>
+            </div>
+
+            <div class="profile">
+                <div class="avatar">AD</div>
+                <div>
+                    <h4>Admin User</h4>
+                    <small>Administrator</small>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Statistics -->
+        <section class="statistics">
+            <div class="stat-card">
+                <div class="stat-icon blue">S</div>
+                <div>
+                    <p>Total Students</p>
+                    <h2>1,250</h2>
+                    <small>Registered students</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon green">C</div>
+                <div>
+                    <p>Total Courses</p>
+                    <h2>35</h2>
+                    <small>Available courses</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon purple">L</div>
+                <div>
+                    <p>Total Lecturers</p>
+                    <h2>85</h2>
+                    <small>Academic staff</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon orange">D</div>
+                <div>
+                    <p>Departments</p>
+                    <h2>8</h2>
+                    <small>Academic departments</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Students Section -->
+        <section class="content-card" id="students">
+
+            <div class="section-header">
+                <div>
+                    <h2>Student Management</h2>
+                    <p>Manage registered campus students</p>
+                </div>
+
+                <button class="primary-button" id="addStudentBtn">
+                    + Add Student
+                </button>
+            </div>
+
+            <div class="search-container">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search student by name, ID, or course..."
+                >
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Full Name</th>
+                            <th>Course</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="studentTableBody">
+                        <tr>
+                            <td>ST001</td>
+                            <td>Jean Claude</td>
+                            <td>Information Technology</td>
+                            <td>jean@example.com</td>
+                            <td><span class="status active-status">Active</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>ST002</td>
+                            <td>Marie Grace</td>
+                            <td>Software Engineering</td>
+                            <td>marie@example.com</td>
+                            <td><span class="status active-status">Active</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>ST003</td>
+                            <td>Peter James</td>
+                            <td>Business Information Technology</td>
+                            <td>peter@example.com</td>
+                            <td><span class="status inactive-status">Inactive</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>ST004</td>
+                            <td>Sarah Alice</td>
+                            <td>Computer Science</td>
+                            <td>sarah@example.com</td>
+                            <td><span class="status active-status">Active</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+        <!-- Courses Section -->
+        <section class="content-card" id="courses">
+            <div class="section-header">
+                <div>
+                    <h2>Available Courses</h2>
+                    <p>Popular courses offered on campus</p>
+                </div>
+            </div>
+
+            <div class="course-grid">
+                <div class="course-card">
+                    <h3>Information Technology</h3>
+                    <p>Networking, systems, and IT support.</p>
+                </div>
+
+                <div class="course-card">
+                    <h3>Software Engineering</h3>
+                    <p>Software development and programming.</p>
+                </div>
+
+                <div class="course-card">
+                    <h3>Computer Science</h3>
+                    <p>Computing theory and algorithms.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Campus Management System. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
